@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		A63DB1742D8C7A1300A50219 /* SwiftLintFramework in Frameworks */ = {isa = PBXBuildFile; productRef = A63DB1732D8C7A1300A50219 /* SwiftLintFramework */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXFileReference section */
 		A63DB1612D8C788C00A50219 /* CryptoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -23,6 +27,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A63DB1742D8C7A1300A50219 /* SwiftLintFramework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -59,12 +64,14 @@
 			buildRules = (
 			);
 			dependencies = (
+				A63DB1762D8C7A1E00A50219 /* PBXTargetDependency */,
 			);
 			fileSystemSynchronizedGroups = (
 				A63DB1632D8C788C00A50219 /* CryptoApp */,
 			);
 			name = CryptoApp;
 			packageProductDependencies = (
+				A63DB1732D8C7A1300A50219 /* SwiftLintFramework */,
 			);
 			productName = CryptoApp;
 			productReference = A63DB1612D8C788C00A50219 /* CryptoApp.app */;
@@ -94,6 +101,9 @@
 			);
 			mainGroup = A63DB1582D8C788C00A50219;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				A63DB1722D8C7A1300A50219 /* XCRemoteSwiftPackageReference "SwiftLint" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = A63DB1622D8C788C00A50219 /* Products */;
 			projectDirPath = "";
@@ -123,6 +133,13 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		A63DB1762D8C7A1E00A50219 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			productRef = A63DB1752D8C7A1E00A50219 /* SwiftLintBuildToolPlugin */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
 		A63DB16D2D8C788E00A50219 /* Debug */ = {
@@ -322,6 +339,30 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		A63DB1722D8C7A1300A50219 /* XCRemoteSwiftPackageReference "SwiftLint" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/realm/SwiftLint";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 0.58.2;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		A63DB1732D8C7A1300A50219 /* SwiftLintFramework */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A63DB1722D8C7A1300A50219 /* XCRemoteSwiftPackageReference "SwiftLint" */;
+			productName = SwiftLintFramework;
+		};
+		A63DB1752D8C7A1E00A50219 /* SwiftLintBuildToolPlugin */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = A63DB1722D8C7A1300A50219 /* XCRemoteSwiftPackageReference "SwiftLint" */;
+			productName = "plugin:SwiftLintBuildToolPlugin";
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = A63DB1592D8C788C00A50219 /* Project object */;
 }
