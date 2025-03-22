@@ -12,6 +12,7 @@
 
 /* Begin PBXFileReference section */
 		A63DB1612D8C788C00A50219 /* CryptoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A6528F572D8F147400B6A87E /* CoinGeckoAPI */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = CoinGeckoAPI; path = /Users/simondelgado/Downloads/CoinGeckoAPI; sourceTree = "<absolute>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
@@ -39,6 +40,7 @@
 			children = (
 				A63DB1632D8C788C00A50219 /* CryptoApp */,
 				A63DB1622D8C788C00A50219 /* Products */,
+				A6528F572D8F147400B6A87E /* CoinGeckoAPI */,
 			);
 			sourceTree = "<group>";
 		};
