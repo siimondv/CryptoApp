@@ -7,6 +7,7 @@
 
 import Foundation
 
-@Observable class ExchangesContainer {
+@Observable class ExchangeListState {
     var exchanges: [Exchange] = []
+    var isLoading: Bool = false
 }

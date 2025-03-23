@@ -9,8 +9,7 @@ import Foundation
 import CoinGeckoAPI
 
 class ExchangeListViewModel {
-    var exchangesContainer: ExchangesContainer = ExchangesContainer()
-    var isLoading: Bool = false
+    var exchangeListState: ExchangeListState = ExchangeListState()
     var errorMessage: String?
     private let coinGeckoService: CoinGeckoAPIServiceProtocol
     init(coinGeckoService: CoinGeckoAPIServiceProtocol = CoinGeckoAPIService()) {
@@ -20,12 +19,12 @@ class ExchangeListViewModel {
         }
     }
     func fetchExchanges() async {
-        self.isLoading = true
+        self.exchangeListState.isLoading = true
         let result = await coinGeckoService.getExchanges()
         switch result {
         case .success(let data):
             if let data {
-                self.exchangesContainer.exchanges = data.map {
+                self.exchangeListState.exchanges = data.map {
                     Exchange(
                         id: $0.id, name: $0.name,
                         yearEstablished: $0.yearEstablished,
@@ -42,6 +41,6 @@ class ExchangeListViewModel {
             self.errorMessage = error.localizedDescription
         }
 
-        self.isLoading = false
+        self.exchangeListState.isLoading = false
     }
 }
