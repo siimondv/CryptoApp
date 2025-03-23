@@ -8,8 +8,8 @@
 import Foundation
 import CoinGeckoAPI
 
-@Observable class ExchangeListViewModel {
-    var exchanges: [Exchange] = []
+class ExchangeListViewModel {
+    var exchangesContainer: ExchangesContainer = ExchangesContainer()
     var isLoading: Bool = false
     var errorMessage: String?
     private let coinGeckoService: CoinGeckoAPIServiceProtocol
@@ -25,7 +25,7 @@ import CoinGeckoAPI
         switch result {
         case .success(let data):
             if let data {
-                self.exchanges = data.map {
+                self.exchangesContainer.exchanges = data.map {
                     Exchange(
                         id: $0.id, name: $0.name,
                         yearEstablished: $0.yearEstablished,

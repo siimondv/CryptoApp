@@ -19,5 +19,3 @@ struct Exchange {
     let trustScore: Int
     let trustScoreRank: Int
 }
-
-

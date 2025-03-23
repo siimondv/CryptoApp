@@ -7,6 +7,6 @@
 
 import Foundation
 
-@Observable class ExchangeList {
+@Observable class ExchangesContainer {
     var exchanges: [Exchange] = []
 }

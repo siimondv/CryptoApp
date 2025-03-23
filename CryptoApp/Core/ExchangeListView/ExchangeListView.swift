@@ -11,7 +11,7 @@ struct ExchangeListView: View {
     @State private var exchnageListViewModel = ExchangeListViewModel()
 
     var body: some View {
-        List(exchnageListViewModel.exchanges, id: \.id) { exchange in
+        List(exchnageListViewModel.exchangesContainer.exchanges, id: \.id) { exchange in
             HStack {
                 AsyncImage(url: URL(string: exchange.imageUrl)) { image in
                     image
