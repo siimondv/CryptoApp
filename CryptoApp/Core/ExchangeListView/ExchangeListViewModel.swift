@@ -10,7 +10,7 @@ import CoinGeckoAPI
 
 class ExchangeListViewModel {
     var exchangeListState: ExchangeListState = ExchangeListState()
-    var errorMessage: String?
+
     private let coinGeckoService: CoinGeckoAPIServiceProtocol
     init(coinGeckoService: CoinGeckoAPIServiceProtocol = CoinGeckoAPIService()) {
         self.coinGeckoService = coinGeckoService
@@ -38,7 +38,7 @@ class ExchangeListViewModel {
             }
 
         case .failure(let error):
-            self.errorMessage = error.localizedDescription
+            self.exchangeListState.errorMessage = error.localizedDescription
         }
 
         self.exchangeListState.isLoading = false

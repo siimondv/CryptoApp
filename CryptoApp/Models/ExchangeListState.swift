@@ -10,4 +10,5 @@ import Foundation
 @Observable class ExchangeListState {
     var exchanges: [Exchange] = []
     var isLoading: Bool = false
+    var errorMessage: String?
 }
