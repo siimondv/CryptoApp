@@ -13,7 +13,7 @@ enum Route: Hashable {
 }
 
 @Observable final class NavigationCoordinator {
-    @Published var path: [Route] = []
+    var path: [Route] = []
     func push(_ route: Route) {
         path.append(route)
     }
