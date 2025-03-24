@@ -12,8 +12,8 @@ enum Route: Hashable {
     case exchangeDetail(String)
 }
 
-@Observable final class NavigationCoordinator {
-    var path: [Route] = []
+final class NavigationCoordinator: ObservableObject {
+    @Published var path: [Route] = []
     func push(_ route: Route) {
         path.append(route)
     }

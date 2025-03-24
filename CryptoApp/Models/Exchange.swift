@@ -5,8 +5,6 @@
 //  Created by Simon Delgado on 23/3/25.
 //
 
-import Foundation
-
 struct Exchange {
     let id: String
     let name: String

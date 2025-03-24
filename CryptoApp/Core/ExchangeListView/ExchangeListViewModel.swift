@@ -10,7 +10,6 @@ import CoinGeckoAPI
 
 class ExchangeListViewModel {
     var exchangeListState: ExchangeListState = ExchangeListState()
-
     private let coinGeckoService: CoinGeckoAPIServiceProtocol
     init(coinGeckoService: CoinGeckoAPIServiceProtocol = CoinGeckoAPIService()) {
         self.coinGeckoService = coinGeckoService

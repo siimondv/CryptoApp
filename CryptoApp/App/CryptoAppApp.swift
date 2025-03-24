@@ -9,9 +9,11 @@ import SwiftUI
 
 @main
 struct CryptoAppApp: App {
+    @State private var navigationCoordinator: NavigationCoordinator = NavigationCoordinator()
     var body: some Scene {
         WindowGroup {
-            ExchangeListView()
+            SplashView()
+                .environmentObject(navigationCoordinator)
         }
     }
 }
