@@ -14,7 +14,6 @@
 		A636EC2A2D907DE2000609A7 /* ExchangeListState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A636EC292D907DE1000609A7 /* ExchangeListState.swift */; };
 		A636EC302D908128000609A7 /* ExchangeListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A636EC2F2D908127000609A7 /* ExchangeListView.swift */; };
 		A636EC342D908DE6000609A7 /* ExchangeListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A636EC332D908DDF000609A7 /* ExchangeListViewModel.swift */; };
-		A636EC3D2D9092B5000609A7 /* CoinGeckoAPI in Frameworks */ = {isa = PBXBuildFile; productRef = A636EC3C2D9092B5000609A7 /* CoinGeckoAPI */; };
 		A636EC412D90C7D0000609A7 /* ExchangeDetails.swift in Sources */ = {isa = PBXBuildFile; fileRef = A636EC402D90C7CF000609A7 /* ExchangeDetails.swift */; };
 		A636EC432D90C7FA000609A7 /* ExchangeDetailsState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A636EC422D90C7F1000609A7 /* ExchangeDetailsState.swift */; };
 		A636EC462D90C976000609A7 /* ExchangeDetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A636EC452D90C974000609A7 /* ExchangeDetailsView.swift */; };
@@ -23,6 +22,7 @@
 		A636EC512D90D523000609A7 /* SplashView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A636EC502D90D520000609A7 /* SplashView.swift */; };
 		A636EC6C2D90E9D6000609A7 /* ExchangeListViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A636EC6B2D90E9D4000609A7 /* ExchangeListViewModelTests.swift */; };
 		A636EC6E2D90EA0B000609A7 /* MockCoinGeckoAPIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = A636EC6D2D90EA0B000609A7 /* MockCoinGeckoAPIService.swift */; };
+		A66426112D9466C9007F44EB /* CoinGeckoAPI in Frameworks */ = {isa = PBXBuildFile; productRef = A66426102D9466C9007F44EB /* CoinGeckoAPI */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -43,7 +43,6 @@
 		A636EC292D907DE1000609A7 /* ExchangeListState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeListState.swift; sourceTree = "<group>"; };
 		A636EC2F2D908127000609A7 /* ExchangeListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeListView.swift; sourceTree = "<group>"; };
 		A636EC332D908DDF000609A7 /* ExchangeListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeListViewModel.swift; sourceTree = "<group>"; };
-		A636EC3A2D9092A9000609A7 /* CoinGeckoAPI */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = CoinGeckoAPI; path = /Users/simondelgado/Downloads/CoinGeckoAPI; sourceTree = "<absolute>"; };
 		A636EC402D90C7CF000609A7 /* ExchangeDetails.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeDetails.swift; sourceTree = "<group>"; };
 		A636EC422D90C7F1000609A7 /* ExchangeDetailsState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeDetailsState.swift; sourceTree = "<group>"; };
 		A636EC452D90C974000609A7 /* ExchangeDetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeDetailsView.swift; sourceTree = "<group>"; };
@@ -54,6 +53,7 @@
 		A636EC6B2D90E9D4000609A7 /* ExchangeListViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeListViewModelTests.swift; sourceTree = "<group>"; };
 		A636EC6D2D90EA0B000609A7 /* MockCoinGeckoAPIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockCoinGeckoAPIService.swift; sourceTree = "<group>"; };
 		A63DB1612D8C788C00A50219 /* CryptoApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CryptoApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A664260F2D94669D007F44EB /* CoinGeckoAPI */ = {isa = PBXFileReference; lastKnownFileType = wrapper; name = CoinGeckoAPI; path = CryptoApp/CoinGeckoAPI; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,7 +68,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A636EC3D2D9092B5000609A7 /* CoinGeckoAPI in Frameworks */,
+				A66426112D9466C9007F44EB /* CoinGeckoAPI in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -170,10 +170,10 @@
 		A63DB1582D8C788C00A50219 = {
 			isa = PBXGroup;
 			children = (
+				A664260F2D94669D007F44EB /* CoinGeckoAPI */,
 				A636EC212D907B8D000609A7 /* CryptoApp */,
 				A636EC692D90E990000609A7 /* CryptoAppTests */,
 				A63DB1622D8C788C00A50219 /* Products */,
-				A636EC3A2D9092A9000609A7 /* CoinGeckoAPI */,
 				A636EC3B2D9092B5000609A7 /* Frameworks */,
 			);
 			sourceTree = "<group>";
@@ -225,7 +225,7 @@
 			);
 			name = CryptoApp;
 			packageProductDependencies = (
-				A636EC3C2D9092B5000609A7 /* CoinGeckoAPI */,
+				A66426102D9466C9007F44EB /* CoinGeckoAPI */,
 			);
 			productName = CryptoApp;
 			productReference = A63DB1612D8C788C00A50219 /* CryptoApp.app */;
@@ -590,14 +590,14 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		A636EC3C2D9092B5000609A7 /* CoinGeckoAPI */ = {
-			isa = XCSwiftPackageProductDependency;
-			productName = CoinGeckoAPI;
-		};
 		A63DB1752D8C7A1E00A50219 /* SwiftLintBuildToolPlugin */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = A63DB1722D8C7A1300A50219 /* XCRemoteSwiftPackageReference "SwiftLint" */;
 			productName = "plugin:SwiftLintBuildToolPlugin";
+		};
+		A66426102D9466C9007F44EB /* CoinGeckoAPI */ = {
+			isa = XCSwiftPackageProductDependency;
+			productName = CoinGeckoAPI;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
